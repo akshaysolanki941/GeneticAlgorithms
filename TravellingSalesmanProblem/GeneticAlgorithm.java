@@ -15,8 +15,7 @@ public class GeneticAlgorithm {
     private int eliteThreshold;
 
     // constructor
-    public GeneticAlgorithm(int populationSize, double mutationRate, double crossoverRate, int eliteThreshold,
-            int poolSize) {
+    public GeneticAlgorithm(int populationSize, double mutationRate, double crossoverRate, int eliteThreshold, int poolSize) {
         this.populationSize = populationSize;
         this.mutationRate = mutationRate;
         this.crossoverRate = crossoverRate;
