@@ -21,8 +21,7 @@ public class Main {
         int poolSize = sc.nextInt();
         int eliteThreshold = sc.nextInt();
 
-        TSP tsp = new TSP(maxGenerations, numCities, populationSize, mutationRate, crossoverRate, eliteThreshold,
-                poolSize);
+        TSP tsp = new TSP(maxGenerations, numCities, populationSize, mutationRate, crossoverRate, eliteThreshold, poolSize);
 
         tsp.solve();
 
