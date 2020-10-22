@@ -18,8 +18,7 @@ public class TSP {
     private int eliteThreshold;
 
     // contructor
-    public TSP(int maxGenerations, int numCities, int populationSize, double mutationRate, double crossoverRate,
-            int eliteThreshold, int poolSize) {
+    public TSP(int maxGenerations, int numCities, int populationSize, double mutationRate, double crossoverRate, int eliteThreshold, int poolSize) {
         this.maxGenerations = maxGenerations;
         this.numCities = numCities;
         this.populationSize = populationSize;
@@ -49,8 +48,7 @@ public class TSP {
             cities[i] = new City(x, y);
         }
 
-        GeneticAlgorithm ga = new GeneticAlgorithm(populationSize, mutationRate, crossoverRate, eliteThreshold,
-                poolSize);
+        GeneticAlgorithm ga = new GeneticAlgorithm(populationSize, mutationRate, crossoverRate, eliteThreshold, poolSize);
 
         Population population = ga.initPopulation(numCities);
         ga.assignFitness(population, cities);
