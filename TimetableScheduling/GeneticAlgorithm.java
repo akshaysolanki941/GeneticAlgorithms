@@ -17,8 +17,7 @@ public class GeneticAlgorithm {
     private int eliteCount;
     private int poolSize;
 
-    public GeneticAlgorithm(int populationSize, double mutationRate, double crossoverRate, int eliteCount,
-            int poolSize) {
+    public GeneticAlgorithm(int populationSize, double mutationRate, double crossoverRate, int eliteCount, int poolSize) {
 
         this.populationSize = populationSize;
         this.mutationRate = mutationRate;
