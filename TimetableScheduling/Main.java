@@ -21,8 +21,7 @@ public class Main {
         int eliteCount = sc.nextInt();
         int poolSize = sc.nextInt();
 
-        Schedule schedule = new Schedule(timetable, maxGenerations, populationSize, mutationRate, crossoverRate,
-                eliteCount, poolSize);
+        Schedule schedule = new Schedule(timetable, maxGenerations, populationSize, mutationRate, crossoverRate, eliteCount, poolSize);
 
         schedule.solve();
         sc.close();
