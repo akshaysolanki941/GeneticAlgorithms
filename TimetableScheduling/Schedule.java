@@ -21,8 +21,7 @@ public class Schedule {
     private int eliteCount;
     private int poolSize;
 
-    public Schedule(Timetable timetable, int maxGenerations, int populationSize, double mutationRate,
-            double crossoverRate, int eliteCount, int poolSize) {
+    public Schedule(Timetable timetable, int maxGenerations, int populationSize, double mutationRate, double crossoverRate, int eliteCount, int poolSize) {
         this.timetable = timetable;
         this.maxGenerations = maxGenerations;
         this.populationSize = populationSize;
